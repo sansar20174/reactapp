@@ -6,10 +6,12 @@ import Article from './components/Article'
 
 function App() {
 
+  const [title, setTitle] = React.useState("My First Article")
+
   return (
     <>
       <Topbar />
-      <Article title="My First Article" />
+      <Article title={title} />
     </>
   )
 }
